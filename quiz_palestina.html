@@ -137,6 +137,9 @@
   .end-score { font-size:3rem; font-family:'Cinzel',serif; color:var(--gold-light); font-weight:900; text-shadow:0 0 30px rgba(45,138,78,.5); margin:14px 0; }
   .end-message { color:var(--parchment); font-size:1.05rem; font-style:italic; margin-bottom:24px; line-height:1.6; }
   .divider { border:none; border-top:1px solid rgba(45,138,78,.15); margin:20px 0; }
+  .qrcode-container { margin-top: 20px; text-align: center; }
+  .qrcode-container img { width: 120px; height: 120px; border: 2px solid var(--gold); border-radius: 8px; padding: 5px; background: white; }
+  .qrcode-label { font-size: 0.8rem; color: var(--parchment-dark); margin-top: 5px; opacity: 0.7; }
 </style>
 </head>
 <body>
@@ -212,8 +215,12 @@
     <div class="end-title" id="end-title">Quiz completato!</div>
     <div class="end-score" id="end-score">0 / 20</div>
     <div class="end-message" id="end-message"></div>
-    <hr class="divider">
     <div class="btn-row"><button class="btn-gold" onclick="restartAll()">↺ RICOMINCIA DALL'INIZIO</button></div>
+    <hr class="divider">
+    <div class="qrcode-container">
+      <img src="assets/qrcode.png" alt="QR Code">
+      <div class="qrcode-label">Condividi il quiz con i tuoi amici!</div>
+    </div>
   </div>
 </div>
 
